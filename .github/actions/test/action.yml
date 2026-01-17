@@ -1,0 +1,15 @@
+name: Test Action
+description: Testing github action with an echo statement
+inputs:
+  message:
+    description: message to echo
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Echo message
+      run: echo "${{ inputs.message }}!"
+      shell: bash
+      working-directory: ${{ github.action_path }}
+
+

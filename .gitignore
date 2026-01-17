@@ -1,0 +1,7 @@
+.venv
+dynamo-app
+fast-app
+flask-app
+containerfile
+pandas-test.py
+requirements.txt
